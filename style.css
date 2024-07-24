@@ -1,0 +1,93 @@
+.header a{
+    font-family: Tahoma;
+    padding-top: 5px;
+
+    color: #eee8aa;
+    text-decoration: overline #ffb6c1;
+    transition: color 0.2s linear;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5px;
+    place-items: center;
+    width: 959px;
+    margin: 0 auto;
+}
+
+@keyframes slidein{
+    from{
+        translate: 150vw 0;
+        scale: 200% 1;
+    }
+
+    to{
+        translate: 0 0;
+        scale: 100% 1;
+    }
+}
+
+body{
+    animation: slidein 2s;
+    background-color: #eee8aa;
+    height: 100%;
+}
+
+.inBody{
+    font-family: Tahoma;
+    width: 100%;
+    font-size: 16px;
+    color: #000080;
+    top: 50%;
+    left: 50%;
+}
+
+.intro{
+    padding-top: 40px;
+    font-size: 30px;
+    text-align: center;
+    color: #3b62da;
+}
+
+.goodbye{
+    font-family: Tahoma;
+    position: fixed;
+    text-align: center;
+    bottom: 1px;
+    width: 100%;
+    font-size: 11px;
+    padding-bottom: 10px;
+}
+
+.links{
+    padding-top: 10px;
+}
+
+.links a{
+    transition: color 0.3s linear;
+    text-decoration: none;
+}
+
+.github:hover{
+    color: #fa8072;
+}
+
+.linkedin:hover{
+    color: #fa8072;
+}
+
+.image-cropper{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 50px;
+}
+
+img{
+    display: inline;
+    height: 100%;
+    width: auto;
+}
